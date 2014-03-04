@@ -13,30 +13,34 @@
 
  */
 .navbar-inner {
-  background-image: -moz-linear-gradient(top, #52b2d8, #1c7ea5);
+  /*background-image: -moz-linear-gradient(top, #52b2d8, #1c7ea5);
   background-image: -ms-linear-gradient(top, #52b2d8, #1c7ea5);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#52b2d8), to(#1c7ea5));
   background-image: -webkit-linear-gradient(top, #52b2d8, #1c7ea5);
   background-image: -o-linear-gradient(top, #52b2d8, #1c7ea5);
   background-image: linear-gradient(top, #52b2d8, #1c7ea5);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'52b2d8, endColorstr='#'1c7ea5, GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'52b2d8, endColorstr='#'1c7ea5, GradientType=0);*/
+  box-shadow: grey 2px 1px 1px;
+  width: 1024px;
+  margin: 0 auto;
 }
 .navbar .brand {
-  padding: 8px 20px 12px;
-  font-size: 30px;
-
-  color: white;
+  padding: 10px 20px 12px;
+  font-size: 40px;
+  color: grey;
 }
 .navbar .nav > li > a {
   padding: 10px 10px 11px;
   font-size: 15px;
-  color: white;
   text-shadow: none;
 }
 .main {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 #imagephone {
   margin-top: 100px;
+}
+body {
+  background-image: -webkit-radial-gradient(center, circle farthest-corner, #94CCE4 0%, #1792BF 100%);
 }
