@@ -8,7 +8,7 @@ Tweeter::Application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-
+ 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
@@ -21,6 +21,7 @@ Tweeter::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
+  config.action_mailer.delivery_method = :letter_opener
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large

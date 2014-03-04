@@ -1,17 +1,13 @@
 Tweeter::Application.routes.draw do
- 
-  devise_for :users
-  get "static_pages/index"
-  get "tweets/new"
-  get "tweets/create"
-  get "tweets/destroy"
-  get "users/index"
+  resources :tweets
 
+  devise_for :users, controllers: { registrations: "registrations"}
+
+  root "static_pages#index"
+
+  resources :users, only: [:index, :show]
+  resources :tweets, only: [:create, :destroy]
   
-  # You can have the root of your site routed with "root"
-  root 'tweets#index'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  get '/welcome' => 'static_pages#welcome'
 
 end

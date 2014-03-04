@@ -21,6 +21,13 @@ gem 'ffaker'
 gem "therubyracer"
 gem "less-rails" 
 gem "twitter-bootstrap-rails"
+group :development do
+	gem "letter_opener"
+	gem 'ffaker'
+end
+group :production do
+	gem 'rails_12factor'
+end
 group :doc do
   gem 'sdoc', require: false
 end
