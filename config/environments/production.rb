@@ -9,7 +9,7 @@ Tweeter::Application.configure do
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
-
+  config.secret_key = 'fd04a130c0102700e3ec1cd35aa6b56d1fbb78f0c32da63ec9c30ac1cb004bef4c72f3e8c69732cbd68bbf1273035d4db1e94949fd3a2991f29d1b5aa3c2af56'
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
