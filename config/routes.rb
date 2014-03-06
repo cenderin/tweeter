@@ -9,5 +9,7 @@ Tweeter::Application.routes.draw do
   resources :tweets, only: [:create, :destroy]
   
   get '/welcome' => 'static_pages#welcome'
-
+  
+  get '/newsletter' => 'static_pages#newsletter'
+  post '/newsletter' => 'static_pages#newsletter'
 end

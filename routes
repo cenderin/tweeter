@@ -28,3 +28,5 @@ cancel_user_registration GET    /users/cancel(.:format)        registrations#can
                          POST   /tweets(.:format)              tweets#create
                          DELETE /tweets/:id(.:format)          tweets#destroy
                  welcome GET    /welcome(.:format)             static_pages#welcome
+              newsletter GET    /newsletter(.:format)          static_pages#newsletter
+                         POST   /newsletter(.:format)          static_pages#newsletter

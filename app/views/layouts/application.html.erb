@@ -11,39 +11,34 @@
   </head>
   <body>
   
-    <div class="navbar navbar-fluid-top ">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <div class="nav pull-right">
-          <li><% if user_logged_in? %>
-           <li><%= link_to "edit account", edit_user_registration_path %></li>
-          <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
-          <% else %>
-           <li> <%= link_to "login", new_user_session_path %></li>
-           <li> <%= link_to "signup", new_user_registration_path %></li>
-          <% end %> 
-          </div>
-        <a class="brand" href= root >Tweeter</a>
-          <div class="container-fluid nav-collapse">
-            <ul class="nav">
-        <!-- <li><%= link_to "Feed", user_path  %></li> -->          
+  <div class="navbar navbar-fluid-top ">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href= root ><span class="icon icon-home"></span></a>
+          <span class="icon icon-twitter"></span>
+            <ul class="nav dropdown pull-right" >
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon-cog pull-right"></span></a>
+            <ul class="dropdown-menu">
+              <% if user_logged_in? %>
+               <li> <%= link_to "edit account", edit_user_registration_path %>
+                <%= link_to "logout", destroy_user_session_path, method: :delete %>
+              <% else %>
+                <%= link_to "login", new_user_session_path %>
+                <%= link_to "signup", new_user_registration_path %>
+              <% end %></li>
             </ul>
           </div>
         </div>
       </div>            
 
       <div class="container-fluid main">
-        <div class="span3 offset1 ">
+        <div class="span4 offset1 ">
           <div class="row-fluid"> 
+
             <%= yield %>
 
+          </div>
         </div>
-       </div>
       </div>
       <footer>
         <p>&copy; Company 2014</p>

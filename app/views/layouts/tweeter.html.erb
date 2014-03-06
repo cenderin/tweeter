@@ -18,34 +18,27 @@
         <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar">fdsafds</span>
         </a>
           <div class="nav">          
         <a class="brand" href="/">Tweeter</a>
-         <img src="http://sonicvaultaustin.com/uploads/images/KEEP_Twitter.png" height="42" width="42"></div>
-          <div class="container-fluid nav-collapse">
+         <img src="http://sonicvaultaustin.com/uploads/images/KEEP_Twitter.png" height="42" width="42">
           </div>
         </div>
       </div>
     </div>
+
       <div class="container-fluid main">
         <div class="row-fluid"> 
           <div class="span6 offset1">
             <%= bootstrap_flash %>
             <%= yield %>
           </div>
-          </div>
-          <div class="span3">
-            <div class="well sidebar-nav">
-            <%= render "devise/sessions/new" %>
-
-       
-            </div>
-          </div>
-
         </div>
-   
-    </div> <!-- /container -->
-
+        <div class="span3">
+          <div class="well sidebar-nav">
+          <%= render "devise/sessions/new" %>
+          </div>
+        </div>
+      </div>
   </body>
 </html>

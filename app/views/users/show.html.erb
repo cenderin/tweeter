@@ -6,15 +6,14 @@
 		</div>
 	</div>
 </div>
-	<div class="span5 offset1">
+	<div class="span6 offset2">
 		<div class="well">
 			<% @tweets.each do |tweet| %><p>
 				<div class="well">
 				<%= tweet.post %>
 				<%= current_user.name %>
-				<%= tweet.created_at  %>
+				<%= tweet.created_at %>
 				</div>
 			<% end %>
 			</p>
 		</div>
-<!-- 		.strftime('%b %d, at %H:%M') -->

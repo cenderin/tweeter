@@ -16,12 +16,13 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
-gem 'better_errors'
 gem 'ffaker'
 gem "therubyracer"
 gem "less-rails" 
 gem "twitter-bootstrap-rails"
 group :development do
+	gem 'binding_of_caller'
+	gem 'better_errors'
 	gem "letter_opener"
 	gem 'ffaker'
 end

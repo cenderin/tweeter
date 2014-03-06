@@ -21,21 +21,22 @@
   background-image: linear-gradient(top, #52b2d8, #1c7ea5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'52b2d8, endColorstr='#'1c7ea5, GradientType=0);*/
   box-shadow: grey 2px 1px 1px;
-  width: 1024px;
   margin: 0 auto;
+  padding-top: 10px;
 }
 .navbar .brand {
-  padding: 10px 20px 12px;
+  padding: 0px 20px 12px;
   font-size: 40px;
   color: grey;
+  float: left;
 }
 .navbar .nav > li > a {
   padding: 10px 10px 11px;
   font-size: 15px;
   text-shadow: none;
+  display: inline-block;
 }
 .main {
-  width: 100%;
   padding-top: 40px;
 }
 #imagephone {
@@ -44,3 +45,22 @@
 body {
   background-image: -webkit-radial-gradient(center, circle farthest-corner, #94CCE4 0%, #1792BF 100%);
 }
+.icon-cog{
+  color:grey;
+  font-size: 40px;
+}
+.icon-home{
+  color:grey;
+  font-size: 40px;
+  }
+
+.icon-twitter{
+  color: #55acee;
+  font-size: 40px;
+  margin-left: 45%;
+ }
+ .icon-envelope{
+  font-size: 30px;
+  padding-left: 15px;
+  color: grey;
+ }
